@@ -26,25 +26,126 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem17 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem14 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Inicio");
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel1.setText("SISTEMA DE VENTAS TIENDA LUCILA");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/supermercado.jpg"))); // NOI18N
+
+        jMenuBar1.setBorder(null);
+
+        jMenu1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/exit.png"))); // NOI18N
+        jMenu1.setText("SALIR");
+        jMenu1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem1.setText("Salir");
+        jMenu1.add(jMenuItem1);
+
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Empleado");
+        jMenu2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/mantenimiento.jpg"))); // NOI18N
+        jMenu2.setText("MANTENIMIENTO");
+        jMenu2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem2.setText("Cliente");
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Producto");
+        jMenu2.add(jMenuItem3);
+
+        jMenuItem6.setText("Empleado");
+        jMenu2.add(jMenuItem6);
+
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setText("Vender");
+        jMenu3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carrito.png"))); // NOI18N
+        jMenu3.setText("VENTA");
+        jMenu3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem8.setText("Vender Productos");
+        jMenu3.add(jMenuItem8);
+
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setText("Producto");
+        jMenu4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/consultar.png"))); // NOI18N
+        jMenu4.setText("CONSULTA");
+        jMenu4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem9.setText("Ventas");
+        jMenu4.add(jMenuItem9);
+
+        jMenuItem10.setText("Productos");
+        jMenu4.add(jMenuItem10);
+
+        jMenuItem15.setText("Clientes");
+        jMenu4.add(jMenuItem15);
+
+        jMenuItem16.setText("Empleados");
+        jMenu4.add(jMenuItem16);
+
         jMenuBar1.add(jMenu4);
+
+        jMenu5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/notebook_32x32.png"))); // NOI18N
+        jMenu5.setText("REPORTES");
+        jMenu5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem11.setText("Reporte Diario");
+        jMenu5.add(jMenuItem11);
+
+        jMenuItem12.setText("Reporte Empleado");
+        jMenu5.add(jMenuItem12);
+
+        jMenuItem13.setText("Reporte Producto");
+        jMenu5.add(jMenuItem13);
+
+        jMenuItem17.setText("Reporte Clientes");
+        jMenu5.add(jMenuItem17);
+
+        jMenuItem18.setText("Reporte Ventas");
+        jMenu5.add(jMenuItem18);
+
+        jMenuBar1.add(jMenu5);
+
+        jMenu6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ayuda.png"))); // NOI18N
+        jMenu6.setText("AYUDA");
+        jMenu6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        jMenuItem14.setText("Acerca del Software");
+        jMenu6.add(jMenuItem14);
+
+        jMenuBar1.add(jMenu6);
 
         setJMenuBar(jMenuBar1);
 
@@ -52,11 +153,24 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
+                .addGap(13, 13, 13)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
@@ -98,10 +212,29 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
