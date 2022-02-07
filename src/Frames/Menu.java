@@ -32,24 +32,24 @@ public class Menu extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        MenuCliente = new javax.swing.JMenuItem();
+        MenuProducto = new javax.swing.JMenuItem();
+        MenuEmpleado = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        VentaVender = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem15 = new javax.swing.JMenuItem();
-        jMenuItem16 = new javax.swing.JMenuItem();
+        MenuCventas = new javax.swing.JMenuItem();
+        MenuCproductos = new javax.swing.JMenuItem();
+        MenuCclientes = new javax.swing.JMenuItem();
+        MenuCempleados = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
+        MenuRdiario = new javax.swing.JMenuItem();
+        MenuRempleados = new javax.swing.JMenuItem();
+        MenuRproductos = new javax.swing.JMenuItem();
+        MenuRclientes = new javax.swing.JMenuItem();
+        MenuRventas = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
-        jMenuItem14 = new javax.swing.JMenuItem();
+        Ayuda = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,14 +75,29 @@ public class Menu extends javax.swing.JFrame {
         jMenu2.setText("MANTENIMIENTO");
         jMenu2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jMenuItem2.setText("Cliente");
-        jMenu2.add(jMenuItem2);
+        MenuCliente.setText("Cliente");
+        MenuCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuClienteActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuCliente);
 
-        jMenuItem3.setText("Producto");
-        jMenu2.add(jMenuItem3);
+        MenuProducto.setText("Producto");
+        MenuProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuProductoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuProducto);
 
-        jMenuItem6.setText("Empleado");
-        jMenu2.add(jMenuItem6);
+        MenuEmpleado.setText("Empleado");
+        MenuEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuEmpleadoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuEmpleado);
 
         jMenuBar1.add(jMenu2);
 
@@ -91,8 +106,13 @@ public class Menu extends javax.swing.JFrame {
         jMenu3.setText("VENTA");
         jMenu3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jMenuItem8.setText("Vender Productos");
-        jMenu3.add(jMenuItem8);
+        VentaVender.setText("Vender Productos");
+        VentaVender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VentaVenderActionPerformed(evt);
+            }
+        });
+        jMenu3.add(VentaVender);
 
         jMenuBar1.add(jMenu3);
 
@@ -101,17 +121,37 @@ public class Menu extends javax.swing.JFrame {
         jMenu4.setText("CONSULTA");
         jMenu4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jMenuItem9.setText("Ventas");
-        jMenu4.add(jMenuItem9);
+        MenuCventas.setText("Ventas");
+        MenuCventas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuCventasActionPerformed(evt);
+            }
+        });
+        jMenu4.add(MenuCventas);
 
-        jMenuItem10.setText("Productos");
-        jMenu4.add(jMenuItem10);
+        MenuCproductos.setText("Productos");
+        MenuCproductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuCproductosActionPerformed(evt);
+            }
+        });
+        jMenu4.add(MenuCproductos);
 
-        jMenuItem15.setText("Clientes");
-        jMenu4.add(jMenuItem15);
+        MenuCclientes.setText("Clientes");
+        MenuCclientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuCclientesActionPerformed(evt);
+            }
+        });
+        jMenu4.add(MenuCclientes);
 
-        jMenuItem16.setText("Empleados");
-        jMenu4.add(jMenuItem16);
+        MenuCempleados.setText("Empleados");
+        MenuCempleados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuCempleadosActionPerformed(evt);
+            }
+        });
+        jMenu4.add(MenuCempleados);
 
         jMenuBar1.add(jMenu4);
 
@@ -120,20 +160,45 @@ public class Menu extends javax.swing.JFrame {
         jMenu5.setText("REPORTES");
         jMenu5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jMenuItem11.setText("Reporte Diario");
-        jMenu5.add(jMenuItem11);
+        MenuRdiario.setText("Reporte Diario");
+        MenuRdiario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuRdiarioActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuRdiario);
 
-        jMenuItem12.setText("Reporte Empleado");
-        jMenu5.add(jMenuItem12);
+        MenuRempleados.setText("Reporte Empleado");
+        MenuRempleados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuRempleadosActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuRempleados);
 
-        jMenuItem13.setText("Reporte Producto");
-        jMenu5.add(jMenuItem13);
+        MenuRproductos.setText("Reporte Producto");
+        MenuRproductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuRproductosActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuRproductos);
 
-        jMenuItem17.setText("Reporte Clientes");
-        jMenu5.add(jMenuItem17);
+        MenuRclientes.setText("Reporte Clientes");
+        MenuRclientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuRclientesActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuRclientes);
 
-        jMenuItem18.setText("Reporte Ventas");
-        jMenu5.add(jMenuItem18);
+        MenuRventas.setText("Reporte Ventas");
+        MenuRventas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuRventasActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuRventas);
 
         jMenuBar1.add(jMenu5);
 
@@ -142,8 +207,13 @@ public class Menu extends javax.swing.JFrame {
         jMenu6.setText("AYUDA");
         jMenu6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
-        jMenuItem14.setText("Acerca del Software");
-        jMenu6.add(jMenuItem14);
+        Ayuda.setText("Acerca del Software");
+        Ayuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AyudaActionPerformed(evt);
+            }
+        });
+        jMenu6.add(Ayuda);
 
         jMenuBar1.add(jMenu6);
 
@@ -175,6 +245,76 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void MenuClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuClienteActionPerformed
+      M_Cliente c1=new M_Cliente();
+      c1.setVisible(true);
+    }//GEN-LAST:event_MenuClienteActionPerformed
+
+    private void MenuProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuProductoActionPerformed
+        M_Producto p1=new M_Producto();
+        p1.setVisible(true);
+    }//GEN-LAST:event_MenuProductoActionPerformed
+
+    private void MenuEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuEmpleadoActionPerformed
+        M_Empleado e1=new M_Empleado();
+        e1.setVisible(true);
+    }//GEN-LAST:event_MenuEmpleadoActionPerformed
+
+    private void VentaVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentaVenderActionPerformed
+        Venta v1=new Venta();
+        v1.setVisible(true);
+    }//GEN-LAST:event_VentaVenderActionPerformed
+
+    private void MenuCventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCventasActionPerformed
+        C_Ventas v1=new C_Ventas();
+        v1.setVisible(true);
+    }//GEN-LAST:event_MenuCventasActionPerformed
+
+    private void MenuCproductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCproductosActionPerformed
+        C_Productos p1=new C_Productos();
+        p1.setVisible(true);
+    }//GEN-LAST:event_MenuCproductosActionPerformed
+
+    private void MenuCclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCclientesActionPerformed
+        C_Clientes c1=new C_Clientes();
+        c1.setVisible(true);
+    }//GEN-LAST:event_MenuCclientesActionPerformed
+
+    private void MenuCempleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCempleadosActionPerformed
+        C_Empleados e1=new C_Empleados();
+        e1.setVisible(true);
+    }//GEN-LAST:event_MenuCempleadosActionPerformed
+
+    private void MenuRdiarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRdiarioActionPerformed
+        R_Diario d1=new R_Diario();
+        d1.setVisible(true);
+    }//GEN-LAST:event_MenuRdiarioActionPerformed
+
+    private void MenuRempleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRempleadosActionPerformed
+        R_Empleado e1=new R_Empleado();
+        e1.setVisible(true);
+    }//GEN-LAST:event_MenuRempleadosActionPerformed
+
+    private void MenuRproductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRproductosActionPerformed
+        R_Producto p1=new R_Producto();
+        p1.setVisible(true);
+    }//GEN-LAST:event_MenuRproductosActionPerformed
+
+    private void MenuRclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRclientesActionPerformed
+        R_Clientes c1=new R_Clientes();
+        c1.setVisible(true);
+    }//GEN-LAST:event_MenuRclientesActionPerformed
+
+    private void MenuRventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRventasActionPerformed
+        R_Ventas v1=new R_Ventas();
+        v1.setVisible(true);
+    }//GEN-LAST:event_MenuRventasActionPerformed
+
+    private void AyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AyudaActionPerformed
+        Acerca_S t1=new Acerca_S();
+        t1.setVisible(true);
+    }//GEN-LAST:event_AyudaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,6 +352,20 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Ayuda;
+    private javax.swing.JMenuItem MenuCclientes;
+    private javax.swing.JMenuItem MenuCempleados;
+    private javax.swing.JMenuItem MenuCliente;
+    private javax.swing.JMenuItem MenuCproductos;
+    private javax.swing.JMenuItem MenuCventas;
+    private javax.swing.JMenuItem MenuEmpleado;
+    private javax.swing.JMenuItem MenuProducto;
+    private javax.swing.JMenuItem MenuRclientes;
+    private javax.swing.JMenuItem MenuRdiario;
+    private javax.swing.JMenuItem MenuRempleados;
+    private javax.swing.JMenuItem MenuRproductos;
+    private javax.swing.JMenuItem MenuRventas;
+    private javax.swing.JMenuItem VentaVender;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
@@ -222,19 +376,5 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
